@@ -9,7 +9,7 @@
       deixei de fazer apenas um uso passivo da tecnologia e comecei a desfrutar
       das possibilidades que ela poderia me proporcionar ao resolver problemas.
     </p>
-    <img class="rounded-lg" src="/image-03.jpg" />
+    <img class="rounded-lg aspect-video object-cover" src="/image-01.jpg" />
   </div>
   <div
     class="my-10 flex flex-col-reverse lg:grid lg:grid-cols-2 items-center gap-10"

@@ -35,9 +35,9 @@ type NavbarProps = {
   external?: boolean
 }
 const items: NavbarProps[] = [
-  { name: 'inicio', path: '/' },
+  // { name: 'inicio', path: '/' },
   { name: 'blog', path: 'https://medium.com/@luis.senarode', external: true },
-  { name: 'projetos', path: '/projects' },
-  { name: 'contato', path: '/contact' },
+  // { name: 'projetos', path: '/projects' },
+  { name: 'contato', path: 'https://wa.me/5571984762497', external: true  },
 ]
 </script>
