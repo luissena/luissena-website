@@ -1,6 +1,8 @@
 <template>
-  <div class="flex items-center py-10 px-20 gap-10">
-    <div class="w-1/2">
+  <div
+    class="flex flex-col-reverse lg:flex-row items-center lg:py-10 lg:px-20 gap-10"
+  >
+    <div class="w-full lg:w-1/2">
       <swiper
         :autoplay="{ delay: 1 }"
         :loop="true"
