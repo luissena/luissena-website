@@ -4,7 +4,7 @@
     <nav>
       <ul class="dark:text-gray-300 text-gray-500 text-lg flex items-center gap-7">
         <li class="dark:hover:text-white hover:text-black " v-for="item in items">
-          <router-link v-if="!item.external" active-class="text-white" :to="item.path">{{item.name }}</router-link>
+          <NuxtLink v-if="!item.external" active-class="dark:text-white text-black" :to="item.path">{{item.name }}</NuxtLink>
           <a v-else target="_blank" :href="item.path">{{item.name }}</a>
         </li>
         <Icon v-if="theme" @click="switchTheme" class="cursor-pointer" size="25px" name="material-symbols-light:dark-mode-outline" color="dark:white"/>  
@@ -17,7 +17,6 @@
 
 <script setup lang="ts">
 
-// variable to store the current theme in html
 
 const theme = ref(false)
 
@@ -35,9 +34,9 @@ type NavbarProps = {
   external?: boolean
 }
 const items: NavbarProps[] = [
-  // { name: 'inicio', path: '/' },
+  { name: 'inicio', path: '/' },
+  { name: 'projetos', path: '/projects' },
   { name: 'blog', path: 'https://medium.com/@luis.senarode', external: true },
-  // { name: 'projetos', path: '/projects' },
   { name: 'contato', path: 'https://wa.me/5571984762497', external: true  },
 ]
 </script>
